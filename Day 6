@@ -1,0 +1,10 @@
+cars =['benz','BMW','ferrari','toyota','kia']
+print(cars)
+for x in cars:
+  print(f"I would like this {x.title()}")
+  print("Very excited to drive {x.title()}.\n")
+Slicing:
+for x in cars:
+  print(cars[0:2])
+
+ 
