@@ -1,0 +1,30 @@
+def greet():
+    print('Hello')
+greet()
+greet()---->function call
+
+def greetuser(username):
+    print(f"Hello,{username.title()}")
+
+greetuser('Rahul')
+
+def describe_pet(animal_type,pet_name):
+    print(f'I have a {animal_type}')
+    print(f"My {animal_type}'s name is {pet_name}")
+describe_pet('dog','tom')
+describe_pet('cat','bruno')
+
+describe_pet(pet_name='scooby',animal_type='dog')#These are keyword arguments
+
+def describe_pet(animal_type='dog',pet_name):
+    print(f'I have a {animal_type}')
+    print(f"My {animal_type}'s name is {pet_name}")
+describe_pet('barfi')
+
+def describe_pet(pet_name,animal_type='dog'):
+    print(f'I have a {animal_type}')
+    print(f"My {animal_type}'s name is {pet_name}")
+describe_pet('Barfi')
+output:
+I have a dog
+My dog's name is Barfi
