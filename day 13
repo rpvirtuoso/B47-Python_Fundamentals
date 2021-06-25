@@ -1,0 +1,18 @@
+def pizza(toppings):
+    print(f"You have ordered the {toppings} as toppings")
+pizza('corn')
+You have ordered the corn as toppings
+pizza('corn','olives','capsicum')
+TypeError: pizza() takes 1 positional argument but 3 were given
+
+def pizza(*toppings):
+    print(f"You have ordered the {toppings} as toppings")
+pizza('corn')
+pizza('corn','olives','capsicum')
+You have ordered the ('corn', 'olives', 'capsicum') as toppings
+
+def get_formatted_name(first_name,last_name):
+    full_name=f"{first_name} {last_name}"
+    return full_name.title()
+x=get_formatted_name('rahul','penchala')
+print(x)
